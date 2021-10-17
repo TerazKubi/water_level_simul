@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Glowna</title>
+{% endblock head %}
+
+{% block body %}
+
+
+<form action = "http://localhost:5000/wykres" method = "post">
+         <p>Podaj czas w sekundach:</p>
+         <p><input type = "number" name = "time" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+</form>
+
+
+
+
+
+
+{% endblock body %}
