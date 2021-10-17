@@ -21,7 +21,11 @@ def wykres():
 
     if time == None:
         return render_template('index.html')
+
     t = int(time)
+    if t <= 0:
+        return render_template('index.html')
+
     h2(t)
     print('zapisano do pliku')
     file_name = os.path.join(app.config['UPLOAD_FOLDER'], 'test.png')
