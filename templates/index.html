@@ -6,14 +6,35 @@
 
 {% block body %}
 
-
-<form action = "https://zbiornik2.herokuapp.com/wykres" method = "post">
+<!-- https://zbiornik2.herokuapp.com -->
+<form action = "/wykres" method = "post">
          <p>Podaj czas w sekundach:</p>
          <p><input type = "number" name = "time" /></p>
+        <p>Porządana wysokość:</p>
+         <p><input type = "number" name = "height" step="0.01" /></p>
+    <br>
+    <br>
+    <p>STALE:</p>
+    <p>KP</p>
+    <input type="range" name="kp" id="kp" min="0" max="0.05" value="0.015" step="0.001"><span id="kp_r" >0.015</span>
+    <p>Ti</p>
+    <input type="range" name="ti" id="ti" min="0.5" max="2" value="0.5" step="0.1"><span id="ti_r">0.5</span>
+    <p>Td</p>
+    <input type="range" name="td" id="td" min="0" max="1" value="0.25" step="0.05"><span id="td_r">0.25</span>
+    <p>A</p>
+    <input type="range" name="a" id="a" min="1" max="10" value="2" step="1"><span id="a_r">2</span>
+    <p>Qd_max</p>
+    <input type="range" name="qdmax" id="qdmax" min="0" max="0.05" value="0.015" step="0.001"><span id="qdmax_r">0.015</span>
+    <p>U_max</p>
+    <input type="range" name="umax" id="umax" min="0" max="20" value="10" step="1"><span id="umax_r">10</span>
+
+
+
+
          <p><input type = "submit" value = "submit" /></p>
 </form>
 
-
+<script src="static/script.js"></script>
 
 
 
