@@ -19,18 +19,18 @@ kp.oninput = function(){
     kp_v.innerHTML = kp.value
 }
 ti.oninput = function(){
-    ti_v.innerHTML = kp.value
+    ti_v.innerHTML = ti.value
 }
 td.oninput = function(){
-    td_v.innerHTML = kp.value
+    td_v.innerHTML = td.value
 }
 
 a.oninput = function(){
-    a_v.innerHTML = kp.value
+    a_v.innerHTML = a.value
 }
 qdmax.oninput = function(){
-    qdmax_v.innerHTML = kp.value
+    qdmax_v.innerHTML = gdmax.value
 }
 umax.oninput = function(){
-    umax_v.innerHTML = kp.value
+    umax_v.innerHTML = umax.value
 }
