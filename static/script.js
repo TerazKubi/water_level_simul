@@ -9,7 +9,7 @@ var umax = document.querySelector('#umax')
 
 var kp_v = document.querySelector('#kp_r')
 var ti_v = document.querySelector('#ti_r')
-var td_v = document.querySelector('#td_R')
+var td_v = document.querySelector('#td_r')
 
 var a_v = document.querySelector('#a_r')
 var qdmax_v = document.querySelector('#qdmax_r')
@@ -29,7 +29,7 @@ a.oninput = function(){
     a_v.innerHTML = a.value
 }
 qdmax.oninput = function(){
-    qdmax_v.innerHTML = gdmax.value
+    qdmax_v.innerHTML = qdmax.value
 }
 umax.oninput = function(){
     umax_v.innerHTML = umax.value
